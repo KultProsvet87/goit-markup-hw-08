@@ -1,0 +1,15 @@
+.footer {
+    background-color: $footer-bg-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__box {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@import '_bottom-logo';
+@import 'address';
+@import 'footer-social';
+@import 'footer-form';

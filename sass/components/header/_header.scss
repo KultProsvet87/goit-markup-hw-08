@@ -1,0 +1,12 @@
+.header {
+    border-bottom: solid 1px $border-color; 
+
+    &__box {
+        display: flex;
+        margin-bottom: -1px;
+    } 
+}
+
+@import 'logo';
+@import 'nav';
+@import 'contact';

@@ -1,0 +1,45 @@
+.work {
+    padding-bottom: 94px;
+
+    &__title {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__img{
+        display: block;
+        width: 370px;
+        height: 270px;
+    }
+
+    &__text {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+
+        width: 100%;
+        margin: 0;
+        padding: 27px 0;
+
+        font-weight: 700;
+        line-height: 1.14;
+        text-align: center;
+        text-transform: uppercase;
+        color: $third-text-color;
+        background-color: $work-text-bgc;
+    }
+}
