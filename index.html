@@ -137,7 +137,7 @@
         </section>
 
         <!-- Чем мы занимаемся -->
-        
+
         <section class="work">
             <div class="container">
                 <h2 class="work__title">
@@ -513,14 +513,16 @@
                 </div>
 
                 <div class="modal-form__licence">
-                    <input type="checkbox" name="" id="licence" class="modal-form__check" required>
-                    <label for="licence" class="modal-form__licence-label">Соглашаюсь с рассылкой и принимаю <a href="#" class="modal-form__link">Условия договора</a></label>
-                    <svg class="modal-form__checked">
-                        <use href="./images/icons.svg#checked"></use>
-                    </svg>
-                    <svg class="modal-form__unchecked">
-                        <use href="./images/icons.svg#unchecked"></use>
-                    </svg>
+                    <label for="licence" class="modal-form__licence-label">
+                        <input type="checkbox" name="" id="licence" class="modal-form__check visually-hidden" required>
+                        Соглашаюсь с рассылкой и принимаю <a href="#" class="modal-form__link">Условия договора</a>
+                        <svg class="modal-form__checked">
+                            <use href="./images/icons.svg#checked"></use>
+                        </svg>
+                        <svg class="modal-form__unchecked">
+                            <use href="./images/icons.svg#unchecked"></use>
+                        </svg>
+                    </label>
                 </div>
 
                 <button type="submit" class="modal-form__button">Отправить</button>

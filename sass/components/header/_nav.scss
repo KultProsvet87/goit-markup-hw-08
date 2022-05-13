@@ -1,9 +1,12 @@
 .nav{
     display: flex;
-
-
+    
     &__list {
-        display: flex;
+        display: none;
+
+        @media (min-width: 768px) {
+            display: flex;
+        }
     }
 
     &__item:not(:last-child){

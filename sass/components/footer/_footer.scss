@@ -4,8 +4,12 @@
     padding-bottom: 60px;
 
     &__box {
-        display: flex;
-        align-items: center;
+        @media (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 

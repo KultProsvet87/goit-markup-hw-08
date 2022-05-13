@@ -1,6 +1,11 @@
 .social-box {
     color: $footer-text-color;
-    margin-right: 93px;
+    text-align: center;
+
+    @media (min-width: 1200px) {
+        text-align-last: left;
+        margin-right: 93px;
+    }
 
     &__text {
         margin: 0;
@@ -14,6 +19,7 @@
 
     &__list {
         display: flex;
+        justify-content: center;
     }
 
     &__item:not(:last-child) {
