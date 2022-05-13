@@ -3,6 +3,7 @@
 
     &__box {
         display: flex;
+        align-items: center;
         margin-bottom: -1px;
     } 
 }
@@ -10,3 +11,4 @@
 @import 'logo';
 @import 'nav';
 @import 'contact';
+@import 'mob_nav_menu';

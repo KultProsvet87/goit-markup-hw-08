@@ -45,13 +45,15 @@
     }
 
     &__overlay {
+        display: flex;
+        align-items: center;
         position: absolute;
         height: 100%;
         top: 0;
         left: 0;
         margin: 0;
 
-        padding: 63px 24px;
+        padding: 24px;
         font-size: 18px;
         line-height: 1.55;
         color: $third-text-color;
