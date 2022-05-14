@@ -1,5 +1,5 @@
 .container {
-    max-width: 450px;
+    max-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -25,4 +25,10 @@
     clip-path: inset(100%); 
     clip: rect(0 0 0 0); 
     overflow: hidden; 
-} 
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}

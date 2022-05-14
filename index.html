@@ -67,41 +67,43 @@
                             <use href="./images/icons.svg#icon-close"></use>
                         </svg>
                     </button>
-                    <ul class="mob-nav__nav-list">
-                        <li class="mob-nav__item">
-                        <a href="./" class="mob-nav__link mob-nav__link--current">
-                                Студия
-                            </a>
-                        </li>
-                        <li class="mob-nav__item">
-                            <a href="./portfolio.html" class="mob-nav__link">
-                                Портфолию
-                            </a>
-                        </li>
-                        <li class="mob-nav__item">
-                            <a href="#" class="mob-nav__link">
-                                Контакты
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="mob-nav__contact-list">
-                        <li class="mob-nav__item">
-                            <a href="tel:+380961111111" class="mob-nav__phone">
-                                +38 096 111 11 11
-                            </a>
-                        </li>
-                        <li class="mob-nav__item">
-                            <a href="mailto:info@devstudio.com" class="mob-nav__mail">
-                                info@devstudio.com
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="mob-nav__social">
-                        <li class="mob-nav__social-item"><a href="#" class="mob-nav__social-link">Instagram</a></li>
-                        <li class="mob-nav__social-item"><a href="#" class="mob-nav__social-link">Twitter</a></li>
-                        <li class="mob-nav__social-item"><a href="#" class="mob-nav__social-link">Facebooc</a></li>
-                        <li class="mob-nav__social-item"><a href="#" class="mob-nav__social-link">Linkedin</a></li>
-                    </ul>
+                    <div class="mob-nav__box">
+                        <ul class="mob-nav__nav-list">
+                            <li class="mob-nav__item">
+                            <a href="./" class="mob-nav__link mob-nav__link--current">
+                                    Студия
+                                </a>
+                            </li>
+                            <li class="mob-nav__item">
+                                <a href="./portfolio.html" class="mob-nav__link">
+                                    Портфолию
+                                </a>
+                            </li>
+                            <li class="mob-nav__item">
+                                <a href="#" class="mob-nav__link">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="mob-nav__contact-list">
+                            <li class="mob-nav__item">
+                                <a href="tel:+380961111111" class="mob-nav__phone">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li class="mob-nav__item">
+                                <a href="mailto:info@devstudio.com" class="mob-nav__mail">
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="mob-nav__social">
+                            <li class="mob-nav__social-item"><a href="#" class="mob-nav__social-link">Instagram</a></li>
+                            <li class="mob-nav__social-item"><a href="#" class="mob-nav__social-link">Twitter</a></li>
+                            <li class="mob-nav__social-item"><a href="#" class="mob-nav__social-link">Facebooc</a></li>
+                            <li class="mob-nav__social-item"><a href="#" class="mob-nav__social-link">Linkedin</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -192,15 +194,15 @@
                 </h2>
                 <ul class="work__list">
                     <li class="work__item">
-                        <img src="./images/box1.jpg" class="work__img" alt="отображение процесса написания кода">
+                        <img srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x" src="./images/box1.jpg" class="work__img" alt="отображение процесса написания кода">                        
                         <p class="work__text">Десктопные приложения</p>
                     </li>
                     <li class="work__item">
-                        <img src="./images/box2.jpg" class="work__img" alt="отображение процесса моделирования структуры приложения">
+                        <img srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x" src="./images/box2.jpg" class="work__img" alt="отображение процесса моделирования структуры приложения">
                         <p class="work__text">Мобильные приложения</p>
                     </li>
                     <li class="work__item">
-                        <img src="./images/box3.jpg" class="work__img" alt="изображения процесса коллористики">
+                        <img srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x" src="./images/box3.jpg" class="work__img" alt="изображения процесса коллористики">
                         <p class="work__text">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -217,7 +219,12 @@
                 <ul class="team__list">
                     <li class="team__item">
                         <div>
-                            <img src="./images/img1.jpg" class="team__img" alt="Фото Игорь Демьяненко">
+                            <picture>
+                                <source srcset="./images/mob/img_mob1.jpg 1x, ./images/mob/img_mob1@2x.jpg 2x" media="(max-width: 767px)" />
+                                <source srcset="./images/tablet/img_tablet1.jpg 1x, ./images/tablet/img_tablet1@2x.jpg 2x" media="(max-width: 1199px)" />
+                                <source srcset="./images/laptop/img_laptop1.jpg 1x, ./images/laptop/img_laptop1@2x.jpg 2x" media="(min-width: 1200px)" />
+                                <img src="./images/mob/img_mob1.jpg" class="team__img" alt="Фото Игорь Демьяненко" />
+                            </picture>
                             <h3 class="team__teammember">
                                 Игорь Демьяненко
                             </h3>
@@ -258,7 +265,12 @@
                     </li>
                     <li class="team__item">
                         <div>
-                            <img src="./images/img2.jpg" class="team__img" alt="Фото Ольга Репина">
+                            <picture>
+                                <source srcset="./images/mob/img_mob2.jpg 1x, ./images/mob/img_mob2@2x.jpg 2x" media="(max-width: 767px)" />
+                                <source srcset="./images/tablet/img_tablet2.jpg 1x, ./images/tablet/img_tablet2@2x.jpg 2x" media="(max-width: 1199px)" />
+                                <source srcset="./images/laptop/img_laptop2.jpg 1x, ./images/laptop/img_laptop2@2x.jpg 2x" media="(min-width: 1200px)" />
+                                <img src="./images/mob/img_mob2.jpg" class="team__img" alt="Фото Игорь Демьяненко" />
+                            </picture>
                             <h3 class="team__teammember">
                                 Ольга Репина
                             </h3>
@@ -299,7 +311,12 @@
                     </li>
                     <li class="team__item">
                         <div>
-                            <img src="./images/img3.jpg" class="team__img" alt="Фото Николай Тарасов">
+                            <picture>
+                                <source srcset="./images/mob/img_mob3.jpg 1x, ./images/mob/img_mob3@2x.jpg 2x" media="(max-width: 767px)" />
+                                <source srcset="./images/tablet/img_tablet3.jpg 1x, ./images/tablet/img_tablet3@2x.jpg 2x" media="(max-width: 1199px)" />
+                                <source srcset="./images/laptop/img_laptop3.jpg 1x, ./images/laptop/img_laptop3@2x.jpg 2x" media="(min-width: 1200px)" />
+                                <img src="./images/mob/img_mob3.jpg" class="team__img" alt="Фото Игорь Демьяненко" />
+                            </picture>
                             <h3 class="team__teammember">
                                 Николай Тарасов
                             </h3>
@@ -340,7 +357,12 @@
                     </li>
                     <li class="team__item">
                         <div>
-                            <img src="./images/img4.jpg" class="team__img" alt="Фото Михаил Ермаков">
+                            <picture>
+                                <source srcset="./images/mob/img_mob4.jpg 1x, ./images/mob/img_mob4@2x.jpg 2x" media="(max-width: 767px)" />
+                                <source srcset="./images/tablet/img_tablet4.jpg 1x, ./images/tablet/img_tablet4@2x.jpg 2x" media="(max-width: 1199px)" />
+                                <source srcset="./images/laptop/img_laptop4.jpg 1x, ./images/laptop/img_laptop4@2x.jpg 2x" media="(min-width: 1200px)" />
+                                <img src="./images/mob/img_mob4.jpg" class="team__img" alt="Фото Игорь Демьяненко" />
+                            </picture>
                             <h3 class="team__teammember">
                                 Михаил Ермаков
                             </h3>
