@@ -618,7 +618,7 @@ h2 {
 }
 @media (min-width: 1200px) {
   .address {
-    margin-right: 70px;
+    margin-right: 85px;
     margin-bottom: 0;
     text-align: left;
   }
@@ -705,6 +705,7 @@ h2 {
 @media (min-width: 1200px) {
   .footer-form {
     text-align: left;
+    margin-top: 0;
   }
 }
 @media (min-width: 1200px) {
