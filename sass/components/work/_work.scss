@@ -1,9 +1,10 @@
 .work {
     display: none;
-    padding-bottom: 94px;
+    
 
     @media (min-width: 1200px) {
-        display: contents;
+        display: block;
+        padding-bottom: 94px;
     }
 
     &__title {

@@ -173,8 +173,6 @@ h2 {
 .contact {
   display: none;
   margin-left: auto;
-  margin-right: -50px;
-  margin-bottom: -10px;
 }
 @media (min-width: 768px) {
   .contact {
@@ -188,6 +186,7 @@ h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 10px;
   }
 }
 @media (min-width: 1200px) {
@@ -196,16 +195,7 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-bottom: 0;
-  }
-}
-.contact__item {
-  margin-right: 50px;
-  margin-bottom: 10px;
-}
-@media (min-width: 1200px) {
-  .contact__item {
-    margin-bottom: 0;
+    gap: 50px;
   }
 }
 .contact__link {
@@ -382,10 +372,17 @@ h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   margin-bottom: -10px;
+}
+@media (max-width: 460px) {
+  .mob-nav__social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .mob-nav__social-item {
   margin-bottom: 10px;
@@ -502,7 +499,7 @@ h2 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: -30px;
+    gap: 30px;
   }
 }
 .benefits__item {
@@ -516,11 +513,6 @@ h2 {
 @media (min-width: 1200px) {
   .benefits__item {
     max-width: 270px;
-  }
-}
-@media (min-width: 768px) {
-  .benefits__item {
-    margin-right: 30px;
   }
 }
 .benefits__icon-box {
@@ -557,14 +549,17 @@ h2 {
     text-align: left;
   }
 }
+.benefits__text {
+  margin: 0;
+}
 
 .work {
   display: none;
-  padding-bottom: 94px;
 }
 @media (min-width: 1200px) {
   .work {
-    display: contents;
+    display: block;
+    padding-bottom: 94px;
   }
 }
 .work__title {
@@ -637,12 +632,7 @@ h2 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: -30px;
-  }
-}
-@media (min-width: 1200px) {
-  .team__list {
-    margin-bottom: 0;
+    gap: 30px;
   }
 }
 .team__item {
@@ -663,13 +653,12 @@ h2 {
 }
 @media (min-width: 768px) {
   .team__item {
-    margin-right: 30px;
+    margin: 0;
     max-width: 354px;
   }
 }
 @media (min-width: 1200px) {
   .team__item {
-    margin-bottom: 0;
     max-width: 270px;
   }
 }
@@ -757,20 +746,19 @@ h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -15px;
+  gap: 30px;
 }
 .clients__item {
-  margin: 15px;
-  width: calc(50% - 30px);
+  width: calc(50% - 15px);
 }
 @media (min-width: 768px) {
   .clients__item {
-    width: calc(33.33333% - 30px);
+    width: calc(33.33333% - 20px);
   }
 }
 @media (min-width: 1200px) {
   .clients__item {
-    width: calc(16.6666666667% - 30px);
+    width: calc(16.6666666667% - 25px);
   }
 }
 .clients__link {

@@ -20,19 +20,18 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        margin: -15px;
+        gap: 30px;
     }
 
     &__item {
-        margin: 15px;
-        width: calc(50% - 30px);
+        width: calc(50% - 15px);
 
         @media (min-width: 768px) {
-            width: calc(33.33333% - 30px);
+            width: calc(33.33333% - 20px);
         }
 
         @media (min-width: 1200px) {
-            width: calc(100%/6 - 30px);
+            width: calc(100%/6 - 25px);
         }
     }
 
