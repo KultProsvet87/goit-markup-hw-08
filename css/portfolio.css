@@ -474,19 +474,23 @@ h2 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
+    margin-bottom: 0;
   }
 }
 .project-list__item {
+  margin-bottom: 30px;
   max-width: 100%;
 }
 @media (min-width: 768px) {
   .project-list__item {
     max-width: 354px;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {
   .project-list__item {
     max-width: 370px;
+    margin-bottom: 0;
   }
 }
 .project-list__link {

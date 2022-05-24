@@ -5,17 +5,21 @@
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
+        margin-bottom: 0;
     }
 
     &__item {
+        margin-bottom: 30px;
         max-width: 100%;        
 
         @media (min-width: 768px) {
-            max-width: 354px;            
+            max-width: 354px;
+            margin-bottom: 0;            
         }
 
         @media (min-width: 1200px) {
             max-width: 370px;
+            margin-bottom: 0;
         }
     }
 
